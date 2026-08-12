@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'orders',
     'reviews',
     'wishlist',
+    'categories',
 ]
 
 MIDDLEWARE = [
@@ -138,6 +139,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
@@ -161,4 +165,5 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
+    'http://127.0.0.1:5173',
 ]
