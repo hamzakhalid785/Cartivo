@@ -1,6 +1,6 @@
 venv/
 frontend/node_modules/
-backend/_pycache_/
+backend/__pycache__/
 frontend/dist/
 *.pyc
 *.sqlite3
