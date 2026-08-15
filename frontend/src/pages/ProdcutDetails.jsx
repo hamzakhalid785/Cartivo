@@ -122,20 +122,20 @@ function ProductDetails() {
 
       {/* Product Image */}
       <div className="group overflow-hidden rounded-3xl border border-gray-200 bg-white">
-        <div className="flex min-h-520 items-center justify-center bg-gray-50">
-          {product.image ? (
-            <img
-              src={product.image}
-              alt={product.name}
-              className="h-full max-h-600 w-full object-cover transition duration-500 group-hover:scale-[1.02]"
-            />
-          ) : (
-            <span className="text-sm text-gray-400">
-              No image available
-            </span>
-          )}
-        </div>
-      </div>
+  <div className="flex min-h-[600px] items-center justify-center bg-gray-50">
+    {product.image ? (
+      <img
+        src={product.image}
+        alt={product.name}
+        className="h-[600px] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+      />
+    ) : (
+      <span className="text-sm text-gray-400">
+        No image available
+      </span>
+    )}
+  </div>
+</div>
 
       {/* Product Information */}
       <div className="flex flex-col justify-center py-4 lg:py-8">
